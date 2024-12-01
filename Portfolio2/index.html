@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLİO WEB SİTE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  </head>
+  <body>
+    <!--HEADER START-->
+    <header>
+      <div class="logo"><span>E</span>D<span>A</span>N<span>U</span>R</div>
+      <ul class="navlist">
+        <li><a href="#home">Ana Sayfa</a></li>
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#services">Hizmetler</a></li>
+        <li><a href="#skills">Yetkinliklerim</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+      <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+    <!--HEADER END-->
+
+    <!--HOME SECTION START-->
+    <section id="home" class="home">
+      <div class="home-content scroll-scale">
+        <h1>Merhabalar, Ben Edanur Kocakoç</h1>
+        <div class="change-text">
+          <h3>Ayrıca</h3>
+          <h3>
+            <span class="word">Frontend Developer</span>
+            <span class="word">Web&nbsp;Designer</span>
+            <span class="word">UX/UI&nbsp;Developer</span>
+          </h3>
+        </div>
+        <p>
+          23 yaşındayım ve Karadeniz Teknik Üniversitesi Yazılım
+          Mühendisliği Bölümü'nden yeni mezun oldum.Samsun'da
+          yaşıyorum ancak iş bulduğum şehre taşınabilme ihtimalim
+          var.Web front-end alanında gelişmek için büyük bir tutkuya
+          sahibim. Eğitim hayatım boyunca HTML, CSS, Bootstrap,
+          JavaScript,Next.Js,Express.js,Jquery React ve Tailwind CSS gibi web teknolojileri ve 
+          MongoDB veri tabanı üzerinde yoğunlaştım. Bu alanlarda sağlam bir temele sahip
+          olduğuma ve kendimi sürekli geliştirmeye devam ettiğime
+          inanıyorum. Edindiğim bilgi ve becerileri pekiştirmek için
+          aktif bir şekilde proje geliştirmeye çalışıyorum. Bu
+          sayede teorik bilgimi pratiğe dökme ve problem çözme
+          yeteneğimi geliştirme imkanı buluyorum. Ayrıca,
+          Techcareer, Patika.Dev Academy ve Udemy platformlarının
+          sunduğu eğitimleri takip ederek ve front-end
+          bootcamp'lerine katılarak kendimi geliştirmeye devam
+          ediyorum. Bu sayede sektördeki güncel gelişmeleri takip
+          etme ve yeni teknolojileri öğrenme fırsatı yakalıyorum.
+          Yeteneklerimi ve bilgimi kullanarak web geliştirme
+          sektörüne katkıda bulunmak ve bu alanda fark yaratmak
+          istiyorum.
+        </p>
+        <div class="info-box">
+          <div class="email-info">
+            <h5>Email:</h5>
+            <span>edanurkocakoc@gmail.com</span>
+          </div>
+          <div class="behance-info">
+            <h5>Gihub</h5>
+            <span >
+              <a href="https://github.com/edanurkkoc" style="color: black;">https://github.com/edanurkkoc</a>
+              </span>
+          </div>
+        </div>
+
+        <div class="btn-box">
+          <a href="#" class="btn" id="download-btn">Download CV</a>
+      </div>
+
+        <!-- <div class="social-icons">
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-medium"></i></a>
+        </div> -->
+      </div>
+      <div class="home-image scroll-scale">
+        <div class="img-box">
+          <img src="img/ben.jpeg" alt="" />
+        </div>
+        <!-- <div class="liquid-shape">
+          <svg
+            viewBox="-100 -100 250 250"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%"
+            id="blobsvg"
+          >
+            <path fill="#FF0066">
+              <animate
+                attributeName="d"
+                dur="10000ms"
+                repeatCount="indefinite"
+                values="
+              M27.7,-54.4C35,-43.7,39.5,-34.5,48,-25.7C56.5,-16.9,69.1,-8.5,69.2,0.1C69.4,8.6,57,17.2,49.7,28.1C42.4,39,40.1,52.2,32.6,61.4C25.2,70.6,12.6,75.9,0.7,74.7C-11.3,73.6,-22.5,66.1,-36.7,60.8C-50.9,55.4,-68,52.3,-73.8,42.5C-79.5,32.8,-73.9,16.4,-73.9,0C-73.8,-16.4,-79.4,-32.7,-74.7,-44.3C-70,-55.8,-55,-62.6,-40.9,-69.4C-26.7,-76.2,-13.4,-82.9,-1.6,-80.2C10.2,-77.4,20.4,-65.2,27.7,-54.4Z;
+              M43.1,-73.9C55.7,-67.3,65.8,-55.6,70.1,-42.4C74.4,-29.2,72.8,-14.6,74.4,0.9C76,16.5,80.8,32.9,76.6,46.2C72.3,59.4,59,69.3,44.8,75C30.5,80.8,15.3,82.3,3,77C-9.2,71.7,-18.3,59.7,-29.1,51.9C-40,44.2,-52.4,40.9,-63.7,32.9C-74.9,25,-84.9,12.5,-86.3,-0.8C-87.7,-14.1,-80.4,-28.1,-70.8,-38.9C-61.2,-49.7,-49.3,-57.3,-37.1,-64.1C-24.9,-71,-12.5,-77.3,1.4,-79.7C15.2,-82.1,30.4,-80.5,43.1,-73.9Z;
+              M40,-69.3C50.9,-63.1,58.1,-50.4,63.3,-37.7C68.5,-25.1,71.9,-12.6,68.6,-1.9C65.3,8.8,55.4,17.5,48.1,26.5C40.7,35.5,36,44.8,28.4,51.8C20.8,58.8,10.4,63.6,-2.7,68.2C-15.8,72.8,-31.5,77.4,-40.6,71.2C-49.6,65,-51.9,48.2,-57.5,34.5C-63,20.9,-71.6,10.4,-70.6,0.6C-69.6,-9.3,-59,-18.6,-50.5,-27.2C-42.1,-35.8,-36,-43.8,-28,-51.7C-19.9,-59.5,-10,-67.2,2.3,-71.2C14.6,-75.2,29.2,-75.5,40,-69.3Z;
+              M31,-56C39.9,-48.6,46.7,-39.7,56.3,-30.2C65.9,-20.6,78.3,-10.3,79.5,0.7C80.8,11.7,70.8,23.5,63.2,36.4C55.5,49.2,50.1,63.3,39.9,66.1C29.8,68.8,14.9,60.2,2.9,55.2C-9.1,50.2,-18.2,48.7,-28.6,46.1C-39,43.6,-50.8,39.8,-61.8,31.9C-72.8,24.1,-83.1,12,-82.6,0.3C-82,-11.3,-70.5,-22.7,-60.1,-31.6C-49.6,-40.6,-40.3,-47.1,-30.5,-54C-20.7,-60.9,-10.3,-68.2,0.4,-68.8C11.1,-69.5,22.1,-63.5,31,-56Z;
+              M27.7,-54.4C35,-43.7,39.5,-34.5,48,-25.7C56.5,-16.9,69.1,-8.5,69.2,0.1C69.4,8.6,57,17.2,49.7,28.1C42.4,39,40.1,52.2,32.6,61.4C25.2,70.6,12.6,75.9,0.7,74.7C-11.3,73.6,-22.5,66.1,-36.7,60.8C-50.9,55.4,-68,52.3,-73.8,42.5C-79.5,32.8,-73.9,16.4,-73.9,0C-73.8,-16.4,-79.4,-32.7,-74.7,-44.3C-70,-55.8,-55,-62.6,-40.9,-69.4C-26.7,-76.2,-13.4,-82.9,-1.6,-80.2C10.2,-77.4,20.4,-65.2,27.7,-54.4Z;
+              M43.1,-73.9C55.7,-67.3,65.8,-55.6,70.1,-42.4C74.4,-29.2,72.8,-14.6,74.4,0.9C76,16.5,80.8,32.9,76.6,46.2C72.3,59.4,59,69.3,44.8,75C30.5,80.8,15.3,82.3,3,77C-9.2,71.7,-18.3,59.7,-29.1,51.9C-40,44.2,-52.4,40.9,-63.7,32.9C-74.9,25,-84.9,12.5,-86.3,-0.8C-87.7,-14.1,-80.4,-28.1,-70.8,-38.9C-61.2,-49.7,-49.3,-57.3,-37.1,-64.1C-24.9,-71,-12.5,-77.3,1.4,-79.7C15.2,-82.1,30.4,-80.5,43.1,-73.9Z;
+              M40,-69.3C50.9,-63.1,58.1,-50.4,63.3,-37.7C68.5,-25.1,71.9,-12.6,68.6,-1.9C65.3,8.8,55.4,17.5,48.1,26.5C40.7,35.5,36,44.8,28.4,51.8C20.8,58.8,10.4,63.6,-2.7,68.2C-15.8,72.8,-31.5,77.4,-40.6,71.2C-49.6,65,-51.9,48.2,-57.5,34.5C-63,20.9,-71.6,10.4,-70.6,0.6C-69.6,-9.3,-59,-18.6,-50.5,-27.2C-42.1,-35.8,-36,-43.8,-28,-51.7C-19.9,-59.5,-10,-67.2,2.3,-71.2C14.6,-75.2,29.2,-75.5,40,-69.3Z;
+              M31,-56C39.9,-48.6,46.7,-39.7,56.3,-30.2C65.9,-20.6,78.3,-10.3,79.5,0.7C80.8,11.7,70.8,23.5,63.2,36.4C55.5,49.2,50.1,63.3,39.9,66.1C29.8,68.8,14.9,60.2,2.9,55.2C-9.1,50.2,-18.2,48.7,-28.6,46.1C-39,43.6,-50.8,39.8,-61.8,31.9C-72.8,24.1,-83.1,12,-82.6,0.3C-82,-11.3,-70.5,-22.7,-60.1,-31.6C-49.6,-40.6,-40.3,-47.1,-30.5,-54C-20.7,-60.9,-10.3,-68.2,0.4,-68.8C11.1,-69.5,22.1,-63.5,31,-56Z;
+              M43.9,-76.5C57.8,-67.9,70.8,-58.2,74.1,-45.2C77.4,-32.3,71,-16.1,67.1,-2.3C63.1,11.6,61.6,23.1,56.3,32.6C51,42.2,42,49.7,32,54.1C22,58.4,11,59.7,-1.6,62.4C-14.2,65.2,-28.4,69.5,-41.3,66.8C-54.2,64.1,-65.8,54.4,-71.5,42.1C-77.1,29.8,-76.9,14.9,-75.5,0.8C-74.2,-13.4,-71.9,-26.7,-67.1,-40.7C-62.4,-54.6,-55.4,-69.1,-43.8,-79.1C-32.2,-89.1,-16.1,-94.5,-0.6,-93.5C14.9,-92.5,29.9,-85.1,43.9,-76.5Z;
+              M27.7,-54.4C35,-43.7,39.5,-34.5,48,-25.7C56.5,-16.9,69.1,-8.5,69.2,0.1C69.4,8.6,57,17.2,49.7,28.1C42.4,39,40.1,52.2,32.6,61.4C25.2,70.6,12.6,75.9,0.7,74.7C-11.3,73.6,-22.5,66.1,-36.7,60.8C-50.9,55.4,-68,52.3,-73.8,42.5C-79.5,32.8,-73.9,16.4,-73.9,0C-73.8,-16.4,-79.4,-32.7,-74.7,-44.3C-70,-55.8,-55,-62.6,-40.9,-69.4C-26.7,-76.2,-13.4,-82.9,-1.6,-80.2C10.2,-77.4,20.4,-65.2,27.7,-54.4Z;
+
+              "
+              ></animate>
+            </path>
+          </svg>
+        </div> -->
+      </div>
+    </section>
+    <!--HOME SECTION END-->
+    <!--ABOUT SECTION START-->
+    <section id="about" class="about">
+      <!-- <div class="img-about scroll-scale">
+        <img src="img/ben.jpeg" alt="" />
+        <div class="info-about1">
+          <span>10+</span>
+          <p>Yıllık tecrübe</p>
+        </div>
+        <div class="info-about2">
+          <span>10+</span>
+          <p>Proje</p>
+        </div>
+      </div> -->
+
+      <div class="about-content scroll-scale">
+        <!-- <span>Size kendimi tanıtayım</span> -->
+        <h2>Hakkımda</h2>
+        <!-- <h3>A story of good</h3> -->
+        <!-- <p>
+          23 yaşındayım ve Karadeniz Teknik Üniversitesi Yazılım
+          Mühendisliği Bölümü'nden yeni mezun oldum.Samsun'da yaşıyorum
+          ancak iş bulduğum şehre taşınabilme ihtimalim var.Web
+          front-end alanında gelişmek için büyük bir tutkuya sahibim...
+        </p> -->
+        <!-- <div class="btn-box">
+          <a href="#" class="btn">Daha Fazlasını Oku</a>
+        </div> -->
+        <div class="row">
+          <div class="education padd-15">
+            <h3 class="title">Eğitim Geçmişim</h3>
+            <div class="row">
+              <div class="timline-box padd-15">
+                <div class="timeline shadow-dark">
+                  <!-- timeline item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 2019-2024
+                    </h3>
+                    <h4 class="timeline-title">
+                      Lisans/Yazılım Mühendisliği
+                    </h4>
+                    <p class="timeline-text">
+                      2024 yılında mezun oldum.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 2015-2019
+                    </h3>
+                    <h4 class="timeline-title">
+                      Lise/Terme Fen Lisesi
+                    </h4>
+                    <p class="timeline-text">
+                      2019 yılında mezun oldum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="experience padd-15">
+            <h3 class="title">Deneyimlerim</h3>
+            <div class="row">
+              <div class="timline-box padd-15">
+                <div class="timeline shadow-dark">
+                  <!-- timeline item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 08/2024
+                    </h3>
+                    <h4 class="timeline-title">
+                      GÖNÜLLÜ YAZILIM MÜHENDİSİ
+                    </h4>
+                    <h4 class="timeline-title">Cakey</h4>
+                    <p class="timeline-text">
+                      Cakey adlı şirkette gönüllü yazılım mühendisi
+                      olarak çalışıyorum.Genellikle React ağırlıklı
+                      projelerdeki gerekli rezerveleri yerine
+                      getiriyorum.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 07/2024
+                    </h3>
+                    <h4 class="timeline-title">GÖNÜLLÜ MENTOR</h4>
+                    <h4 class="timeline-title">
+                      Kodluyoruz Hi-Kod Front-End Atölyesi
+                    </h4>
+                    <p class="timeline-text">
+                      8 haftalık yoğun bir programın ardından
+                      Kodluyoruz'un Front-End kursunu başarıyla
+                      tamamlayıp bitirme projemi sunduktan sonra
+                      sertifkayı almaya hak kazandım. Bu kurs sayesinde
+                      HTML, CSS ve JavaScript gibi temel front-end
+                      becerilerimi geliştirmenin yanı sıra, responsive
+                      web tasarımı ve kullanıcı deneyimi (UX) gibi
+                      konularda da bilgi edindim. Öğrendiklerimi
+                      aktarmak ve network edinmek için gönüllü mentor
+                      olarak devam etmeye karar verdim.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 07/2024
+                    </h3>
+                    <h4 class="timeline-title">
+                      FRONT-END WEB DEVELOPER STAJYERİ
+                    </h4>
+                    <h4 class="timeline-title">
+                      BeeTech Yazılım Şirketi
+                    </h4>
+                    <p class="timeline-text">
+                      Samsunda bulunan BeeTech Yazılım Şirketinde remote
+                      olarak yaptığım zorunlu stajımdan sonra gönüllü
+                      stajyer olarak devam ederek front-end web
+                      geliştiricipozisyonunda görev yapıyorum. Hem
+                      tasarım hem de kodlama aşamasında verilen
+                      sorumluluklarımı yerine getiriyorum.Benden
+                      istenilen admin panel tasarımı, e-ticaret 
+                      projelerinin kodlamalarını ve figma ile
+                      istenilen web tasarımlarını yapıyorum.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i>03-06/2024
+                    </h3>
+                    <h4 class="timeline-title">
+                      YAPAY ZEKA GELİŞTİRME STAJYERİ
+                    </h4>
+                    <h4 class="timeline-title">
+                      Huawei Telekominikasyon Şirketi
+                    </h4>
+                    <p class="timeline-text">
+                      Stajım bana sağladığı katkılardan bahsetmek
+                      istiyorum. Transformers kütüphanesi ile LLM
+                      modellere giriş yaptım. Ardından istemlerimizi
+                      modelimizin işlevine göre değişecek olan
+                      pre-training, prompt-engineering, prompt-tuning ve
+                      fine-tuning , reinforcement learning/human
+                      feedback gibi aşamalardan bahsedip modeli
+                      kullanacağımız amaca göre hazırladım. Bunları
+                      yaparken de Pipeline, PyTorch ve TensorFlow
+                      kütüphanelerini kullandım. Ayrıca github hesabıma
+                      da yüklediğim staj boyunca sentiment-analysis,
+                      textgeneration ve summarization ,translation ve
+                      question and answering gibi konularla ilgili
+                      çalışmalarımdan da bahsedip stajın bana LLM
+                      modeller ile AI alanında birçok katkısı olduğunu
+                      paylaşmak isterim
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--ABOUT SECTION END-->
+    <!--SERVİCES SECTION START-->
+    <section id="services" class="services">
+      <div class="main-text scroll-scale">
+        <span>Sizin için neler yapabilirim</span>
+        <h2>Hizmetlerim</h2>
+      </div>
+      <div class="section-services scroll-bottom">
+        <div class="service-box">
+          <i class="bx bxs-layer service-icon"></i>
+          <h3>Backend Developer</h3>
+          <p>
+            Güçlü ve ölçeklenebilir e-ticaret uygulamaları geliştirmek için Express.js framework'ünü 
+            kullanarak özelleştirilmiş API'ler oluşturuyorum.Kullanıcı dostu ve işlevsel yönetim panelleri tasarlamak için Laravel 
+            framework'ünü kullanarak veri yönetimini kolaylaştırıyorum.MongoDB veya MySQL gibi veritabanı sistemleri ile 
+            veri yapılarınızı güvenli ve verimli bir şekilde yönetiyorum.
+           
+          </p>
+          <div class="btn-box service-btn">
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="service-box">
+          <i class="bx bx-desktop service-icon"></i>
+          <h3>Web Designer</h3>
+          <p>
+            Müşterilerinizin ihtiyaçlarına özel, duyarlı ve kullanıcı dostu web siteleri tasarlıyorum.
+            Figma kullanarak modern ve kullanıcı dostu web tasarımları oluşturuyorum; prototip 
+            ve wireframe'lerle fikirleri görselleştiriyorum.
+            Web siteleri ve uygulamalar için modern ve estetik tasarımlar geliştiriyorum.Ayrıca 
+            sosyal medya hesaplarınız için ilgi çekici grafikler ve içerikler tasarlıyorum.
+          </p>
+          <div class="btn-box service-btn">
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <!-- <div class="service-box">
+          <i class="bx bxl-figma service-icon"></i>
+          <h3>UI/UX Designer</h3>
+          <p>
+            Projelerinizi görselleştirmek için interaktif prototipler ve wireframe'ler tasarlıyorum.
+          </p>
+          <div class="btn-box service-btn">
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div> -->
+        <div class="service-box">
+          <i class="bx bx-code-alt service-icon"></i>
+          <h3>Frontend Developer</h3>
+          <p>
+            Modern web standartlarına uygun, temiz ve optimize edilmiş kod yazıyorum.
+            Duyarlı web arayüzleri oluşturmak için HTML, CSS ve Tailwind CSS 
+            kullanarak şık ve işlevsel tasarımlar geliştiriyorum.
+            React, bootstrap gibi popüler frontend framework'leri ile dinamik 
+            ve etkileşimli uygulamalar geliştiriyorum.Farklı tarayıcı ve cihazlarda 
+            tutarlı bir deneyim için uyumluluk testleri yapıyorum.
+          </p>
+          <div class="btn-box service-btn">
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--SERVİCES SECTION END-->
+    <!--SKİLL SECTION START-->
+    <section id="skills" class="skills">
+      <div class="main-text scroll-scale">
+        <span>Teknik ve Profosyonel</span>
+        <h2>Yeteneklerim</h2>
+      </div>
+      <div class="skill-main scroll-scale">
+        <div class="skill-left scroll-scale">
+          <h3>Teknik Yeteneklerim</h3>
+          <div class="skill-bar">
+            <div class="info">
+              <p>HTML</p>
+              <p>92%</p>
+            </div>
+            <div class="bar">
+              <span class="html"></span>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>FİGMA</p>
+              <p>72%</p>
+            </div>
+            <div class="bar">
+              <span class="figma"></span>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>JAVASCRİPT</p>
+              <p>60%</p>
+            </div>
+            <div class="bar">
+              <span class="javascript"> </span>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>CSS</p>
+              <p>90%</p>
+            </div>
+            <div class="bar">
+              <span class="css"></span>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>REACT</p>
+              <p>52%</p>
+            </div>
+            <div class="bar">
+              <span class="react"></span>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="info">
+              <p>NEXT.JS</p>
+              <p>42%</p>
+            </div>
+            <div class="bar">
+              <span class="typescript"></span>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="skill-right scroll-scale">
+          <h3>Profosyonel Yeteneklerim</h3>
+          <div class="professional">
+            <div class="box">
+              <div class="circle" data-dots="80" data-percent="80"></div>
+
+              <div class="text">
+                <big>90%</big>
+                <small>Takım Çalışması</small>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="circle" data-dots="80" data-percent="80"></div>
+
+              <div class="text">
+                <big>80%</big>
+                <small>Takım Çalışması</small>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="circle" data-dots="70" data-percent="70"></div>
+
+              <div class="text">
+                <big>70%</big>
+                <small>Takım Çalışması</small>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="circle" data-dots="100" data-percent="100"></div>
+              <div class="text">
+                <big>100%</big>
+                <small>Takım Çalışması</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PORTFOLİO SECTION START---------------->
+    <section id="portfolio" class="portfolio">
+      <div class="main-text scroll-scale">
+        <span>Sizin için neler yapabailirim</span>
+        <h2>Geçmiş Projelerim</h2>
+      </div>
+      <div class="container">
+        <div class="filter-buttons scroll-scale">
+          <button class="button" data-filter="all">Hepsi</button>
+          <button class="button" data-filter=".product">E-Ticaret</button>
+          <button class="button" data-filter=".ınter">Kendi Çalışmalarım</button>
+          <button class="button" data-filter=".web">Tasarım</button>
+        </div>
+
+        <div class="portfolio-gallery scroll-bottom">
+          <div class="port-box mix product">
+            <div class="port-image">
+              <img src="/img/1.png" alt="">
+            </div>
+            <div class="port-content">
+              <h3>E-TİCARET</h3>
+              <p>
+                React ile geliştirdiğim e-ticaret sitem.
+              </p>
+              <a href="https://majestic-cuchufli-158378.netlify.app/"> <i class='bx bx-link-external'></i> </a>
+            </div>
+          </div>
+
+          <div class="port-box  mix ınter">
+            <div class="port-image">
+              <img src="/img/2.png" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Restoran Menu</h3>
+              <p>
+               Temel html,css ve js bilgimle geliştirdiğim menü sitesi. 
+              </p>
+              <a href="https://zesty-tulumba-0fa882.netlify.app/"> <i class='bx bx-link-external'></i> </a>
+            </div>
+          </div>
+
+          <div class="port-box  mix ınter">
+            <div class="port-image">
+              <img src="/img/3.png" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Çevre Kirliliği</h3>
+              <p>
+               Kodluyoruz bitirme projem.
+              </p>
+              <a href="https://magenta-zuccutto-729dba.netlify.app/"> <i class='bx bx-link-external'></i> </a>
+            </div>
+          </div>
+
+          <div class="port-box  mix ınter web">
+            <div class="port-image">
+              <img src="/img/6.png" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Figma Tasarım</h3>
+              <p>
+                Figma ile yaptığım mobil,pc ve tablet uyumlu responsive tasarım.
+              </p>
+              <a href="https://www.figma.com/design/4PZ9kpZgEsQDYnY6U90u4Y/responsive?node-id=1-1606&t=G7voLXmOXo1PoG58-1"> <i class='bx bx-link-external'></i> </a>
+            </div>
+          </div>
+          <div class="port-box  mix product">
+            <div class="port-image">
+              <img src="/img/4.png" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Book Store</h3>
+              <p>
+                E-ticaret sepet işlemlerini gerçekleştiren bir site.(jquery)
+              </p>
+              <a href="https://dapper-rolypoly-5aff0d.netlify.app/"> <i class='bx bx-link-external'></i> </a>
+            </div>
+          </div>
+          <div class="port-box  mix ınter">
+            <div class="port-image">
+              <img src="/img/5.png" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Portfolyo</h3>
+              <p>
+                Portfolyo sitem. 
+              </p>
+              <a href="https://monumental-mandazi-5c04a8.netlify.app/"> <i class='bx bx-link-external'></i> </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--CONTENT SECTION START---------------->
+    <section id="contact" class="contant">
+      <div class="main-text scroll-scale">
+        <span>Bana soru sorun</span>
+        <h2>Benimle İletişime Girin</h2>
+      </div>
+
+      <form action="#" class="scroll-bottom">
+        <input type="text" placeholder="Adınız">
+        <input type="text" placeholder="SoyAdınız">
+        <input type="text" placeholder="Emailiniz">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Mesajınız"></textarea>
+        <div class="btn-box formBtn">
+          <button type="submit" class="btn">Mesajınızı Gönderin</button>
+        </div>
+      </form>
+    </section>
+    <!-- <section id="contact" class="contant">
+      <div class="main-text scroll-scale">
+        <span>Bana soru sorun</span>
+        <h2>Benimle İletişime Girin</h2>
+      </div>
+    
+      <form action="send_email.php" method="post" class="scroll-bottom">
+        <input type="text" name="first_name" placeholder="Adınız" required>
+        <input type="text" name="last_name" placeholder="SoyAdınız" required>
+        <input type="email" name="email" placeholder="Emailiniz" required>
+        <textarea name="message" cols="30" rows="10" placeholder="Mesajınız" required></textarea>
+        <div class="btn-box formBtn">
+          <button type="submit" class="btn">Mesajınızı Gönderin</button>
+        </div>
+      </form>
+    </section> -->
+    
+    <!-- footer website -->
+     <footer>
+      <p class="scroll-scale">Copyright &copy 2023 by ParsCoder || All Right Reservd.</p>
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+     </footer>
+
+    <script src="mixitup.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
